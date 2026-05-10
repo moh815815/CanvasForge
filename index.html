@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CanvasForge — No-Code Website Builder</title>
+  <meta name="description" content="CanvasForge is a professional no-code website builder with drag-and-drop. Build stunning pages visually in real-time." />
+  <meta name="theme-color" content="#0a0a0b" />
+  <meta property="og:title" content="CanvasForge — No-Code Website Builder" />
+  <meta property="og:description" content="Build stunning websites visually with drag-and-drop. No coding required." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CanvasForge — No-Code Website Builder" />
+  <meta name="twitter:description" content="Build stunning websites visually with drag-and-drop. No coding required." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧊</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="topbar-left" style="display:flex;align-items:center;gap:12px">
+      <div class="logo"><i class="fas fa-cube"></i><span>CanvasForge</span></div>
+    </div>
+    <div class="topbar-center" role="toolbar" aria-label="Editor toolbar">
+      <button class="tool-btn" id="undoBtn" aria-label="Undo" title="Undo (Ctrl+Z)"><i class="fas fa-undo"></i></button>
+      <button class="tool-btn" id="redoBtn" aria-label="Redo" title="Redo (Ctrl+Shift+Z)"><i class="fas fa-redo"></i></button>
+      <div class="divider" role="separator"></div>
+      <button class="tool-btn" id="previewBtn" aria-label="Toggle preview" title="Preview (Ctrl+P)"><i class="fas fa-eye"></i><span>Preview</span></button>
+      <div class="divider" role="separator"></div>
+      <span class="tool-group-label">Align</span>
+      <button class="tool-btn" id="alignLeftBtn" aria-label="Align left" title="Align left"><i class="fas fa-align-left"></i></button>
+      <button class="tool-btn" id="alignCenterBtn" aria-label="Align center" title="Align center"><i class="fas fa-align-center"></i></button>
+      <button class="tool-btn" id="alignRightBtn" aria-label="Align right" title="Align right"><i class="fas fa-align-right"></i></button>
+    </div>
+    <div class="topbar-right" role="toolbar" aria-label="Utility toolbar">
+      <div class="zoom-controls">
+        <button class="tool-btn" id="zoomOutBtn" aria-label="Zoom out" title="Zoom out (Ctrl+-)"><i class="fas fa-minus"></i></button>
+        <span class="zoom-level" id="zoomLevel" aria-live="polite">100%</span>
+        <button class="tool-btn" id="zoomInBtn" aria-label="Zoom in" title="Zoom in (Ctrl+=)"><i class="fas fa-plus"></i></button>
+        <button class="tool-btn" id="zoomResetBtn" aria-label="Reset zoom" title="Reset zoom (Ctrl+0)"><i class="fas fa-expand"></i></button>
+      </div>
+      <div class="divider" role="separator"></div>
+      <button class="tool-btn" id="shortcutsBtn" aria-label="Keyboard shortcuts" title="Keyboard shortcuts (Ctrl+/)"><i class="fas fa-keyboard"></i></button>
+      <button class="tool-btn" id="exportBtn" aria-label="Export HTML" title="Export HTML"><i class="fas fa-file-export"></i><span>Export</span></button>
+      <button class="tool-btn" id="clearBtn" aria-label="Clear canvas" title="Clear Canvas"><i class="fas fa-trash-alt"></i><span>Clear</span></button>
+    </div>
+  </header>
+
+  <!-- Main Layout -->
+  <div class="main-layout">
+
+    <!-- Left Sidebar — Components / Layers -->
+    <aside class="sidebar left-sidebar" id="componentsPanel">
+      <div class="sidebar-tabs">
+        <button class="sidebar-tab active" data-tab="components"><i class="fas fa-cubes"></i><span>Blocks</span></button>
+        <button class="sidebar-tab" data-tab="layers"><i class="fas fa-layer-group"></i><span>Layers</span></button>
+      </div>
+      <div class="tab-content active" id="tabComponents">
+        <div class="sidebar-content">
+          <div class="component-category">Layout</div>
+          <div class="component-item" draggable="true" data-type="container"><i class="fas fa-border-all"></i><span>Container</span></div>
+          <div class="component-item" draggable="true" data-type="divider"><i class="fas fa-grip-lines"></i><span>Divider</span></div>
+          <div class="component-item" draggable="true" data-type="spacer"><i class="fas fa-arrows-alt-v"></i><span>Spacer</span></div>
+          <div class="component-category">Content</div>
+          <div class="component-item" draggable="true" data-type="heading"><i class="fas fa-heading"></i><span>Heading</span></div>
+          <div class="component-item" draggable="true" data-type="paragraph"><i class="fas fa-paragraph"></i><span>Paragraph</span></div>
+          <div class="component-item" draggable="true" data-type="text"><i class="fas fa-font"></i><span>Text</span></div>
+          <div class="component-category">Media</div>
+          <div class="component-item" draggable="true" data-type="icon"><i class="fas fa-star"></i><span>Icon</span></div>
+          <div class="component-item" draggable="true" data-type="image"><i class="fas fa-image"></i><span>Image</span></div>
+          <div class="component-item" draggable="true" data-type="video"><i class="fas fa-video"></i><span>Video</span></div>
+          <div class="component-category">Forms</div>
+          <div class="component-item" draggable="true" data-type="input"><i class="fas fa-i-cursor"></i><span>Input</span></div>
+          <div class="component-item" draggable="true" data-type="textarea"><i class="fas fa-align-left"></i><span>Textarea</span></div>
+          <div class="component-item" draggable="true" data-type="button"><i class="fas fa-hand-pointer"></i><span>Button</span></div>
+        </div>
+      </div>
+      <div class="tab-content" id="tabLayers">
+        <div class="sidebar-content" id="layersContent">
+          <div class="layers-empty">No elements yet</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Center — Canvas -->
+    <main class="canvas-container" id="canvasContainer">
+      <div class="canvas-wrapper">
+        <div class="canvas" id="canvas">
+          <div class="canvas-placeholder" id="canvasPlaceholder">
+            <i class="fas fa-mouse-pointer"></i>
+            <p>Drag components here to build your page</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Right Sidebar — Properties -->
+    <aside class="sidebar right-sidebar" id="propertiesPanel">
+      <div class="sidebar-header"><h3>Properties</h3></div>
+      <div class="sidebar-content" id="propertiesContent">
+        <div class="no-selection">
+          <i class="fas fa-arrow-left"></i>
+          <p>Select an element on the canvas to edit its properties</p>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- Preview Overlay -->
+  <div class="preview-overlay" id="previewOverlay">
+    <div class="preview-toolbar">
+      <div class="device-switcher">
+        <button class="device-btn active" data-device="desktop" title="Desktop"><i class="fas fa-desktop"></i></button>
+        <button class="device-btn" data-device="tablet" title="Tablet"><i class="fas fa-tablet-alt"></i></button>
+        <button class="device-btn" data-device="mobile" title="Mobile"><i class="fas fa-mobile-alt"></i></button>
+      </div>
+      <button class="tool-btn" id="exitPreviewBtn"><i class="fas fa-times"></i><span>Exit Preview</span></button>
+    </div>
+    <div class="preview-frame" id="previewFrame">
+      <div class="canvas preview-desktop" id="previewCanvas"></div>
+    </div>
+  </div>
+
+  <!-- Context Menu -->
+  <div class="ctx-menu" id="ctxMenu" role="menu" aria-label="Element context menu" hidden>
+    <button class="ctx-item" data-action="bringFront"><i class="fas fa-arrow-up"></i> Bring to Front</button>
+    <button class="ctx-item" data-action="sendBack"><i class="fas fa-arrow-down"></i> Send to Back</button>
+    <div class="ctx-divider" role="separator"></div>
+    <button class="ctx-item" data-action="duplicate"><i class="fas fa-copy"></i> Duplicate</button>
+    <button class="ctx-item" data-action="copy"><i class="fas fa-copy"></i> Copy</button>
+    <div class="ctx-divider" role="separator"></div>
+    <button class="ctx-item danger" data-action="delete"><i class="fas fa-trash"></i> Delete</button>
+  </div>
+
+  <!-- Shortcuts Modal -->
+  <div class="modal-overlay" id="shortcutsModal" role="dialog" aria-modal="true" aria-label="Keyboard shortcuts" hidden>
+    <div class="modal-box" style="max-width:480px">
+      <div class="modal-header"><h3><i class="fas fa-keyboard" style="color:var(--accent);margin-right:8px"></i>Keyboard Shortcuts</h3><button class="tool-btn" id="closeShortcutsBtn" aria-label="Close"><i class="fas fa-times"></i></button></div>
+      <div class="modal-body shortcuts-body">
+        <div class="shortcut-group"><div class="shortcut-key"><kbd>Ctrl</kbd> + <kbd>Z</kbd></div><span>Undo</span></div>
+        <div class="shortcut-group"><div class="shortcut-key"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd></div><span>Redo</span></div>
+        <div class="shortcut-group"><div class="shortcut-key"><kbd>Ctrl</kbd> + <kbd>C</kbd></div><span>Copy element</span></div>
+        <div class="shortcut-group"><div class="shortcut-key"><kbd>Ctrl</kbd> + <kbd>V</kbd></div><span>Paste element</span></div>
+        <div class="shortcut-group"><div class="shortcut-key"><kbd>Ctrl</kbd> + <kbd>D</kbd></div><span>Duplicate element</span></div>
+        <div class="shortcut-group"><div class="shortcut-key"><kbd>Delete</kbd></div><span>Delete element</span></div>
+        <div class="shortcut-group"><div class="shortcut-key"><kbd>Ctrl</kbd> + <kbd>P</kbd></div><span>Toggle preview</span></div>
+        <div class="shortcut-group"><div class="shortcut-key"><kbd>Ctrl</kbd> + <kbd>=</kbd></div><span>Zoom in</span></div>
+        <div class="shortcut-group"><div class="shortcut-key"><kbd>Ctrl</kbd> + <kbd>-</kbd></div><span>Zoom out</span></div>
+        <div class="shortcut-group"><div class="shortcut-key"><kbd>Ctrl</kbd> + <kbd>0</kbd></div><span>Reset zoom</span></div>
+        <div class="shortcut-group"><div class="shortcut-key"><kbd>?</kbd></div><span>Show shortcuts</span></div>
+        <div class="shortcut-group"><div class="shortcut-key"><kbd>Escape</kbd></div><span>Deselect / Exit preview</span></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/state.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/drag-drop.js"></script>
+  <script src="js/properties.js"></script>
+</body>
+</html>

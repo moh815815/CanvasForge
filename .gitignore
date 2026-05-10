@@ -1,0 +1,21 @@
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Other projects in this repo
+daleel-faisal/
+صفحة هبوط/
+
+# Env
+.env
+.env.local
