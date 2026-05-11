@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>دليل فيصل - دليلك الشامل للخدمات في منطقتك</title>
+  <meta name="description" content="دليل فيصل: أسرع طريقة للوصول إلى جميع الخدمات في منطقتك — صيدليات، سباكين، مطاعم، كهربائيين، متاجر، أطباء.">
+  <meta name="keywords" content="دليل فيصل, خدمات, صيدلية, سباك, مطعم, كهربائي, متجر, طبيب, دليل الخدمات">
+  <meta name="author" content="دليل فيصل">
+  <meta name="robots" content="index, follow">
+  <meta name="format-detection" content="telephone=no">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="دليل فيصل - دليلك الشامل للخدمات">
+  <meta property="og:description" content="أسرع طريقة للوصول إلى كل الخدمات في منطقتك — صيدليات، سباكين، محلات، وأكثر">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://daleelfaisal.com">
+  <meta property="og:locale" content="ar_SA">
+  <meta property="og:image" content="https://daleelfaisal.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="دليل فيصل - دليلك الشامل للخدمات">
+  <meta name="twitter:description" content="أسرع طريقة للوصول إلى كل الخدمات في منطقتك">
+
+  <!-- PWA / Mobile -->
+  <meta name="theme-color" content="#0066ff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f111a" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧭</text></svg>">
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
+
+  <style>
+    /* ===== Reset & Base ===== */
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      /* Light theme */
+      --primary: #0066ff;
+      --primary-dark: #004ccc;
+      --primary-rgb: 0, 102, 255;
+      --accent: #00c9a7;
+      --bg: #f8f9fc;
+      --bg-rgb: 248, 249, 252;
+      --card-bg: #ffffff;
+      --text: #1a1a2e;
+      --text-light: #6b7280;
+      --border: #e5e7eb;
+      --footer-bg: #0f172a;
+      --footer-text: rgba(255, 255, 255, 0.7);
+      --hero-from: #eef2ff;
+      --hero-mid: #e0f2fe;
+      --hero-to: #f0fdf4;
+      --overlay: rgba(255, 255, 255, 0.98);
+      --error: #ef4444;
+      --error-rgb: 239, 68, 68;
+      --success: #25d366;
+      --success-rgb: 37, 211, 102;
+      --whatsapp: #25d366;
+      --whatsapp-hover: #1ebe5d;
+      --shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+      --shadow-hover: 0 16px 48px rgba(0, 102, 255, 0.12);
+      --radius: 16px;
+      --radius-sm: 12px;
+      --radius-full: 60px;
+      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --scrollbar-thumb: #c1c7cd;
+      --scrollbar-track: transparent;
+    }
+
+    [data-theme="dark"] {
+      --primary: #4d8cff;
+      --primary-dark: #3a7bef;
+      --accent: #00e6bf;
+      --bg: #0f111a;
+      --card-bg: #1a1d2e;
+      --text: #e8e8f0;
+      --text-light: #9ca3af;
+      --border: #2d3142;
+      --footer-bg: #06070a;
+      --footer-text: rgba(255, 255, 255, 0.5);
+      --hero-from: #0f111a;
+      --hero-mid: #141828;
+      --hero-to: #0a1a10;
+      --overlay: rgba(15, 17, 26, 0.98);
+      --shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+      --shadow-hover: 0 16px 48px rgba(77, 140, 255, 0.15);
+      --scrollbar-thumb: #3d4152;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      overflow-x: hidden;
+      transition: background var(--transition), color var(--transition);
+    }
+
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; height: auto; }
+    ul, ol { list-style: none; }
+
+    /* ===== Custom Scrollbar ===== */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+    ::-webkit-scrollbar-thumb {
+      background: var(--scrollbar-thumb);
+      border-radius: 8px;
+    }
+    ::-webkit-scrollbar-thumb:hover { background: var(--text-light); }
+
+    /* ===== Utilities ===== */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px; height: 1px;
+      padding: 0; margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* ===== Skip Link ===== */
+    .skip-link {
+      position: fixed;
+      top: -100%;
+      right: 16px;
+      z-index: 9999;
+      background: var(--primary);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+      font-weight: 700;
+      transition: top 0.2s;
+    }
+
+    .skip-link:focus { top: 0; }
+
+    /* ===== Focus ===== */
+    :focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
+
+    ::selection {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    /* ===== Section Header ===== */
+    .section-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .section-header__title {
+      font-size: 2rem;
+      font-weight: 800;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-header__title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      border-radius: 4px;
+      margin: 8px auto 0;
+    }
+
+    .section-header__desc {
+      color: var(--text-light);
+      margin-top: 8px;
+      font-size: 1.05rem;
+    }
+
+    /* ===== Scroll Reveal ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal:nth-child(2) { transition-delay: 0.1s; }
+    .reveal:nth-child(3) { transition-delay: 0.2s; }
+    .reveal:nth-child(4) { transition-delay: 0.3s; }
+    .reveal:nth-child(5) { transition-delay: 0.4s; }
+    .reveal:nth-child(6) { transition-delay: 0.5s; }
+
+    /* ===== Header ===== */
+    .header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: rgba(var(--bg-rgb), 0.85);
+      border-bottom: 1px solid var(--border);
+      transition: background var(--transition), box-shadow var(--transition), border-color var(--transition);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    .header.scrolled {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    .header__inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+
+    .header__actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Theme Toggle */
+    .theme-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 50%;
+      background: transparent;
+      color: var(--text);
+      font-size: 1.15rem;
+      cursor: pointer;
+      transition: background var(--transition), color var(--transition);
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .theme-toggle:hover {
+      background: rgba(var(--primary-rgb), 0.1);
+      color: var(--primary);
+    }
+
+    /* Logo */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    .logo__icon {
+      font-size: 1.7rem;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Nav */
+    .nav {
+      display: flex;
+      gap: 32px;
+    }
+
+    .nav__link {
+      font-weight: 600;
+      color: var(--text);
+      position: relative;
+      padding-bottom: 4px;
+      transition: color var(--transition);
+    }
+
+    .nav__link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: var(--primary);
+      transition: width var(--transition);
+    }
+
+    .nav__link:hover { color: var(--primary); }
+    .nav__link:hover::after { width: 100%; }
+    .nav__link.active { color: var(--primary); }
+    .nav__link.active::after { width: 100%; }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 32px;
+      height: 32px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      z-index: 1001;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .hamburger__line {
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: var(--text);
+      border-radius: 4px;
+      transition: transform var(--transition), opacity var(--transition), background var(--transition);
+    }
+
+    .hamburger.active .hamburger__line:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .hamburger.active .hamburger__line:nth-child(2) { opacity: 0; }
+    .hamburger.active .hamburger__line:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    /* ===== Hero ===== */
+    .hero {
+      position: relative;
+      padding: 140px 0 80px;
+      background: linear-gradient(135deg, var(--hero-from) 0%, var(--hero-mid) 50%, var(--hero-to) 100%);
+      overflow: hidden;
+      transition: background var(--transition);
+    }
+
+    .hero__inner {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .hero__badge {
+      display: inline-block;
+      padding: 6px 18px;
+      border-radius: 40px;
+      background: rgba(var(--primary-rgb), 0.1);
+      color: var(--primary);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      border: 1px solid rgba(var(--primary-rgb), 0.15);
+    }
+
+    .hero__title {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 900;
+      line-height: 1.2;
+    }
+
+    .hero__title span {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero__subtitle {
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      color: var(--text-light);
+      max-width: 600px;
+      margin: 16px auto 32px;
+    }
+
+    /* Search Form */
+    .search-form {
+      display: flex;
+      gap: 12px;
+      max-width: 560px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 6px;
+      border-radius: var(--radius-full);
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+      border: 1px solid var(--border);
+      transition: background var(--transition), border-color var(--transition), box-shadow var(--transition);
+    }
+
+    .search-form:focus-within {
+      box-shadow: 0 0 0 3px rgba(var(--primary-rgb), 0.15), 0 4px 24px rgba(0, 0, 0, 0.06);
+      border-color: var(--primary);
+    }
+
+    .search-form__wrapper {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 0 16px;
+    }
+
+    .search-form__icon {
+      color: var(--text-light);
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .search-form__input {
+      flex: 1;
+      border: none;
+      outline: none;
+      background: transparent;
+      font-size: 1rem;
+      padding: 12px 0;
+      font-family: inherit;
+      color: var(--text);
+    }
+
+    .search-form__input::placeholder {
+      color: var(--text-light);
+      opacity: 0.7;
+    }
+
+    .search-form__btn {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 12px 28px;
+      border-radius: 40px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background var(--transition), transform var(--transition);
+      white-space: nowrap;
+      font-family: inherit;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .search-form__btn:hover { background: var(--primary-dark); transform: scale(1.02); }
+    .search-form__btn:active { transform: scale(0.98); }
+
+    /* Hero Tags */
+    .hero__tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .hero__tag {
+      padding: 6px 18px;
+      border-radius: 40px;
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      font-size: 0.88rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background var(--transition), color var(--transition), border-color var(--transition), transform var(--transition);
+      color: var(--text-light);
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    [data-theme="dark"] .hero__tag {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: rgba(255, 255, 255, 0.08);
+    }
+
+    .hero__tag:hover {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .hero__tag:active {
+      transform: translateY(0) scale(0.96);
+    }
+
+    /* Scroll Indicator */
+    .scroll-indicator {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      margin-top: 40px;
+      color: var(--text-light);
+      text-decoration: none;
+      animation: float 2.5s ease-in-out infinite;
+    }
+
+    .scroll-indicator__text {
+      font-size: 0.8rem;
+      font-weight: 500;
+      opacity: 0.6;
+    }
+
+    .scroll-indicator__arrow {
+      display: block;
+      width: 24px;
+      height: 24px;
+      border-left: 2px solid var(--primary);
+      border-bottom: 2px solid var(--primary);
+      transform: rotate(-45deg);
+      opacity: 0.6;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(8px); }
+    }
+
+    /* Hero Wave */
+    .hero__wave {
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 100%;
+      line-height: 0;
+    }
+
+    .hero__wave svg {
+      display: block;
+      width: 100%;
+      height: 60px;
+    }
+
+    .hero__wave path { transition: fill var(--transition); }
+
+    /* ===== Services ===== */
+    .services { padding: 80px 0; }
+
+    .services__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .service-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      box-shadow: var(--shadow);
+      transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+      border: 1px solid var(--border);
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .service-card__icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      color: #fff;
+      background: var(--clr, var(--primary));
+      margin-bottom: 18px;
+    }
+
+    .service-card__title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .service-card__desc {
+      color: var(--text-light);
+      font-size: 0.92rem;
+      line-height: 1.6;
+      margin-bottom: 16px;
+    }
+
+    .service-card__link {
+      font-weight: 600;
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap var(--transition), color var(--transition);
+    }
+
+    .service-card__link:hover { gap: 10px; color: var(--primary-dark); }
+
+    /* No Results */
+    .no-results {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      padding: 60px 20px;
+      text-align: center;
+      color: var(--text-light);
+    }
+
+    .no-results.show { display: flex; }
+    .no-results i { font-size: 3rem; opacity: 0.4; }
+    .no-results p { font-size: 1.1rem; }
+    .no-results span { font-weight: 700; color: var(--text); }
+
+    /* ===== Testimonials ===== */
+    .testimonials {
+      padding: 80px 0;
+      background: var(--bg);
+      transition: background var(--transition);
+    }
+
+    .testimonials__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .testimonial-card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+      transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .testimonial-card__stars {
+      color: #f59e0b;
+      font-size: 1rem;
+      margin-bottom: 14px;
+      letter-spacing: 2px;
+    }
+
+    .testimonial-card__text {
+      color: var(--text);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .testimonial-card__author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .testimonial-card__avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1.1rem;
+      flex-shrink: 0;
+    }
+
+    .testimonial-card__name {
+      display: block;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+
+    .testimonial-card__role {
+      display: block;
+      font-size: 0.82rem;
+      color: var(--text-light);
+    }
+
+    /* ===== Stats ===== */
+    .stats {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      padding: 64px 0;
+      color: #fff;
+    }
+
+    .stats__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 32px;
+      text-align: center;
+    }
+
+    .stat-card__icon { font-size: 2rem; opacity: 0.85; margin-bottom: 12px; }
+    .stat-card__num { display: block; font-size: 2.4rem; font-weight: 900; line-height: 1; }
+    .stat-card__label { display: block; margin-top: 6px; opacity: 0.8; font-size: 1rem; }
+
+    /* ===== Contact ===== */
+    .contact { padding: 80px 0; }
+
+    .contact__content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    .contact__form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .contact__input {
+      padding: 14px 18px;
+      border: 2px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-size: 1rem;
+      background: var(--card-bg);
+      color: var(--text);
+      transition: border-color var(--transition), box-shadow var(--transition), background var(--transition);
+      font-family: inherit;
+      outline: none;
+      accent-color: var(--primary);
+    }
+
+    .contact__input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 4px rgba(var(--primary-rgb), 0.1);
+    }
+
+    .contact__input::placeholder {
+      color: var(--text-light);
+      opacity: 0.7;
+    }
+
+    .contact__input.error {
+      border-color: var(--error);
+    }
+
+    .contact__input.error:focus {
+      box-shadow: 0 0 0 4px rgba(var(--error-rgb), 0.1);
+    }
+
+    .contact__textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .contact__btn {
+      padding: 14px 32px;
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius-sm);
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-family: inherit;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .contact__btn:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(var(--primary-rgb), 0.25);
+    }
+
+    .contact__btn:active { transform: translateY(0); }
+    .contact__btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+    .contact__info {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .whatsapp-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--whatsapp);
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 40px;
+      font-weight: 700;
+      font-size: 1.05rem;
+      transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+      width: fit-content;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .whatsapp-btn i { font-size: 1.4rem; }
+
+    .whatsapp-btn:hover {
+      background: var(--whatsapp-hover);
+      transform: scale(1.03);
+      box-shadow: 0 8px 24px rgba(var(--success-rgb), 0.3);
+    }
+
+    .whatsapp-btn:active { transform: scale(0.98); }
+
+    .contact__tel,
+    .contact__email,
+    .contact__address {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--text-light);
+      font-size: 0.95rem;
+    }
+
+    .contact__tel i,
+    .contact__email i,
+    .contact__address i {
+      width: 20px;
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+
+    /* ===== Footer ===== */
+    .footer {
+      background: var(--footer-bg);
+      color: var(--footer-text);
+      padding: 32px 0;
+      transition: background var(--transition);
+    }
+
+    .footer__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer__copy strong { color: #fff; }
+
+    .footer__links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .footer__links a {
+      font-size: 0.9rem;
+      transition: color var(--transition);
+    }
+
+    .footer__links a:hover { color: #fff; }
+
+    .footer__socials { display: flex; gap: 14px; }
+
+    .footer__social {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      transition: background var(--transition), border-color var(--transition), transform var(--transition);
+      font-size: 1rem;
+      color: inherit;
+    }
+
+    .footer__social:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+      transform: translateY(-3px);
+    }
+
+    /* ===== Back to Top ===== */
+    .back-to-top {
+      position: fixed;
+      bottom: 24px;
+      left: 24px;
+      z-index: 900;
+      width: 48px;
+      height: 48px;
+      border: none;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      font-size: 1.1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(var(--primary-rgb), 0.3);
+      transition: opacity var(--transition), transform var(--transition), visibility var(--transition), background var(--transition);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(12px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .back-to-top:hover { background: var(--primary-dark); transform: translateY(-3px); }
+    .back-to-top:active { transform: translateY(0) scale(0.92); }
+
+    /* ===== Toast ===== */
+    .toast-container {
+      position: fixed;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      pointer-events: none;
+      padding: 0 16px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .toast {
+      pointer-events: auto;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 14px 20px;
+      border-radius: var(--radius-sm);
+      background: var(--card-bg);
+      color: var(--text);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+      border: 1px solid var(--border);
+      font-size: 0.95rem;
+      font-weight: 500;
+      animation: toastIn 0.4s ease, toastOut 0.4s ease 2.6s forwards;
+    }
+
+    .toast--success { border-right: 4px solid var(--success); }
+    .toast--error { border-right: 4px solid var(--error); }
+    .toast--info { border-right: 4px solid var(--primary); }
+
+    .toast i { font-size: 1.2rem; flex-shrink: 0; }
+    .toast--success i { color: var(--success); }
+    .toast--error i { color: var(--error); }
+    .toast--info i { color: var(--primary); }
+
+    @keyframes toastIn {
+      from { opacity: 0; transform: translateY(20px) scale(0.95); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    @keyframes toastOut {
+      from { opacity: 1; transform: translateY(0) scale(1); }
+      to { opacity: 0; transform: translateY(-10px) scale(0.95); }
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      .nav {
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: var(--overlay);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+        z-index: 999;
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.4s ease, opacity 0.4s ease, background var(--transition);
+        background: rgba(var(--bg-rgb), 0.98);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+      }
+
+      .nav.open {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+      }
+
+      .nav__link { font-size: 1.3rem; }
+      .hamburger { display: flex; }
+
+      .hero { padding: 120px 0 60px; }
+
+      .search-form {
+        flex-direction: column;
+        border-radius: var(--radius);
+        padding: 12px;
+      }
+
+      .search-form__wrapper {
+        padding: 0;
+        border: 2px solid var(--border);
+        border-radius: var(--radius-sm);
+        padding: 0 12px;
+      }
+
+      .search-form__btn { width: 100%; padding: 14px; }
+
+      .section-header__title { font-size: 1.6rem; }
+
+      .contact__content { grid-template-columns: 1fr; }
+      .testimonials__grid { grid-template-columns: 1fr; }
+
+      .stats__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+
+      .footer__inner {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .service-card { padding: 24px 18px; }
+      .hero__title { font-size: 1.7rem; }
+      .stats__grid { gap: 16px; }
+      .stat-card__num { font-size: 1.8rem; }
+      .back-to-top { bottom: 16px; left: 16px; width: 42px; height: 42px; font-size: 1rem; }
+    }
+
+    /* ===== Reduced Motion ===== */
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+
+      html { scroll-behavior: auto; }
+      .reveal { opacity: 1; transform: none; }
+      .scroll-indicator { animation: none; }
+    }
+
+    /* ===== Print ===== */
+    @media print {
+      .header, .hamburger, .theme-toggle, .search-form, .hero__tags,
+      .hero__wave, .whatsapp-btn, .back-to-top, .footer__socials,
+      .scroll-indicator, .toast-container {
+        display: none !important;
+      }
+
+      .hero { padding: 40px 0; background: none !important; }
+
+      .stats {
+        background: var(--primary) !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .service-card, .testimonial-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+      }
+
+      .contact__content { grid-template-columns: 1fr; }
+    }
+
+    /* ===== Hover-only interactions ===== */
+    .service-card:hover { transform: translateY(-6px); }
+    .testimonial-card:hover { transform: translateY(-4px); }
+    .whatsapp-btn:hover { transform: scale(1.03); }
+    .footer__social:hover { transform: translateY(-3px); }
+  </style>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "دليل فيصل",
+    "description": "دليل الخدمات الشامل في منطقتك",
+    "url": "https://daleelfaisal.com",
+    "telephone": "+966500000000",
+    "areaServed": "SA",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+966500000000",
+      "contactType": "customer service"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "480"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Skip link -->
+  <a href="#hero" class="skip-link">تخطى إلى المحتوى الرئيسي</a>
+
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a href="/" class="logo" aria-label="دليل فيصل - الصفحة الرئيسية">
+        <i class="fas fa-compass logo__icon" aria-hidden="true"></i>
+        <span class="logo__text">دليل فيصل</span>
+      </a>
+      <nav class="nav" id="nav" role="navigation" aria-label="القائمة الرئيسية">
+        <a href="#hero" class="nav__link" data-nav>الرئيسية</a>
+        <a href="#services" class="nav__link" data-nav>الخدمات</a>
+        <a href="#testimonials" class="nav__link" data-nav>التقييمات</a>
+        <a href="#contact" class="nav__link" data-nav>تواصل معنا</a>
+      </nav>
+      <div class="header__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="تبديل الوضع النهاري/الليلي" title="الوضع الليلي">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="فتح/إغلاق القائمة" aria-expanded="false" aria-controls="nav">
+          <span class="hamburger__line" aria-hidden="true"></span>
+          <span class="hamburger__line" aria-hidden="true"></span>
+          <span class="hamburger__line" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero" aria-label="القسم الرئيسي">
+    <div class="container hero__inner">
+      <div class="hero__badge">دليلك الموثوق للخدمات</div>
+      <h1 class="hero__title">مرحباً بك في <span>دليل فيصل</span></h1>
+      <p class="hero__subtitle">أسرع طريقة للوصول إلى كل الخدمات في منطقتك — صيدليات، سباكين، محلات، وأكثر</p>
+      <form class="search-form" id="searchForm" role="search" aria-label="بحث عن الخدمات">
+        <label for="searchInput" class="visually-hidden">ابحث عن خدمة</label>
+        <div class="search-form__wrapper">
+          <i class="fas fa-search search-form__icon" aria-hidden="true"></i>
+          <input type="text" class="search-form__input" id="searchInput" placeholder="ابحث عن خدمة... صيدلية، سباك، محل" autocomplete="off">
+        </div>
+        <button type="submit" class="search-form__btn">بحث</button>
+      </form>
+      <div class="hero__tags" role="group" aria-label="خدمات سريعة">
+        <span class="hero__tag" data-search="صيدلية" role="button" tabindex="0">صيدلية</span>
+        <span class="hero__tag" data-search="سباك" role="button" tabindex="0">سباك</span>
+        <span class="hero__tag" data-search="مطعم" role="button" tabindex="0">مطعم</span>
+        <span class="hero__tag" data-search="كهربائي" role="button" tabindex="0">كهربائي</span>
+        <span class="hero__tag" data-search="محل ملابس" role="button" tabindex="0">محل ملابس</span>
+      </div>
+
+      <a href="#services" class="scroll-indicator" aria-label="تصفح الخدمات">
+        <span class="scroll-indicator__text">اسحب للأسفل</span>
+        <span class="scroll-indicator__arrow"></span>
+      </a>
+    </div>
+    <div class="hero__wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+        <path d="M0,60 C360,120 1080,0 1440,60 L1440,120 L0,120 Z" fill="var(--bg)"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services section" id="services" aria-label="الخدمات">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-header__title">خدماتنا</h2>
+        <p class="section-header__desc">أبرز الخدمات المتوفرة في دليل فيصل</p>
+      </div>
+      <div class="services__grid" id="servicesGrid" role="list">
+        <div class="service-card reveal" data-category="صيدلية" role="listitem">
+          <div class="service-card__icon" style="--clr:#2ecc71;" aria-hidden="true">
+            <i class="fas fa-prescription-bottle-alt"></i>
+          </div>
+          <h3 class="service-card__title">صيدليات</h3>
+          <p class="service-card__desc">أقوى الصيدليات في منطقتك بأحدث الأدوية والمستلزمات الطبية</p>
+          <a href="javascript:void(0)" class="service-card__link">تصفح الصيدليات <i class="fas fa-arrow-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="service-card reveal" data-category="سباك" role="listitem">
+          <div class="service-card__icon" style="--clr:#3498db;" aria-hidden="true">
+            <i class="fas fa-wrench"></i>
+          </div>
+          <h3 class="service-card__title">سباكين</h3>
+          <p class="service-card__desc">سباكين محترفين لتصليح وتركيب جميع التمديدات المنزلية</p>
+          <a href="javascript:void(0)" class="service-card__link">تصفح السباكين <i class="fas fa-arrow-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="service-card reveal" data-category="مطعم" role="listitem">
+          <div class="service-card__icon" style="--clr:#e67e22;" aria-hidden="true">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <h3 class="service-card__title">مطاعم</h3>
+          <p class="service-card__desc">أشهر المطاعم مع تقييمات الزوار وأسرع توصيل للمنزل</p>
+          <a href="javascript:void(0)" class="service-card__link">تصفح المطاعم <i class="fas fa-arrow-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="service-card reveal" data-category="كهربائي" role="listitem">
+          <div class="service-card__icon" style="--clr:#9b59b6;" aria-hidden="true">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h3 class="service-card__title">كهربائيين</h3>
+          <p class="service-card__desc">كهربائيين خبراء لصيانة وتركيب الأنظمة الكهربائية</p>
+          <a href="javascript:void(0)" class="service-card__link">تصفح الكهربائيين <i class="fas fa-arrow-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="service-card reveal" data-category="متجر" role="listitem">
+          <div class="service-card__icon" style="--clr:#f39c12;" aria-hidden="true">
+            <i class="fas fa-store"></i>
+          </div>
+          <h3 class="service-card__title">متاجر</h3>
+          <p class="service-card__desc">أفضل المحلات التجارية لتلبية احتياجاتك اليومية</p>
+          <a href="javascript:void(0)" class="service-card__link">تصفح المتاجر <i class="fas fa-arrow-left" aria-hidden="true"></i></a>
+        </div>
+        <div class="service-card reveal" data-category="طبيب" role="listitem">
+          <div class="service-card__icon" style="--clr:#1abc9c;" aria-hidden="true">
+            <i class="fas fa-user-md"></i>
+          </div>
+          <h3 class="service-card__title">أطباء</h3>
+          <p class="service-card__desc">أفضل الأطباء والمراكز الطبية في تخصصات متعددة</p>
+          <a href="javascript:void(0)" class="service-card__link">تصفح الأطباء <i class="fas fa-arrow-left" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="no-results" id="noResults" aria-live="polite">
+        <i class="fas fa-search-minus" aria-hidden="true"></i>
+        <p>لا توجد نتائج مطابقة للبحث "<span id="noResultsTerm"></span>"</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials section" id="testimonials" aria-label="تقييمات المستخدمين">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-header__title">ماذا قالوا عنا</h2>
+        <p class="section-header__desc">آراء المستخدمين الذين جربوا دليل فيصل</p>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+          </div>
+          <p class="testimonial-card__text">"موقع ممتاز! ساعدني في العثور على سباك قريب من المنزل في دقائق. أنصح الكل بالتجربة."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">أ</div>
+            <div>
+              <span class="testimonial-card__name">أحمد</span>
+              <span class="testimonial-card__role">مستخدم</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+          </div>
+          <p class="testimonial-card__text">"دليل فيصل وفّر عليّ وقت وجهد كبير في البحث عن صيدلية مفتوحة بعد منتصف الليل. شكراً لكم!"</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">س</div>
+            <div>
+              <span class="testimonial-card__name">سارة</span>
+              <span class="testimonial-card__role">مستخدمة</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="testimonial-card__stars">
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <i class="fas fa-star-half-alt" aria-hidden="true"></i>
+          </div>
+          <p class="testimonial-card__text">"قائمة الخدمات منظمة وسهلة التصفح.加入了 معلومات التواصل مع المحلات مباشرة. أتمنى يضيفون المزيد من المدن."</p>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" aria-hidden="true">م</div>
+            <div>
+              <span class="testimonial-card__name">محمد</span>
+              <span class="testimonial-card__role">مستخدم</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats section" aria-label="إحصائيات">
+    <div class="container stats__grid">
+      <div class="stat-card reveal">
+        <i class="fas fa-building stat-card__icon" aria-hidden="true"></i>
+        <span class="stat-card__num" data-target="150" aria-label="150 خدمة مدرجة">0</span>
+        <span class="stat-card__label">خدمة مدرجة</span>
+      </div>
+      <div class="stat-card reveal">
+        <i class="fas fa-users stat-card__icon" aria-hidden="true"></i>
+        <span class="stat-card__num" data-target="3200" aria-label="3200 مستخدم نشط">0</span>
+        <span class="stat-card__label">مستخدم نشط</span>
+      </div>
+      <div class="stat-card reveal">
+        <i class="fas fa-star stat-card__icon" aria-hidden="true"></i>
+        <span class="stat-card__num" data-target="480" aria-label="480 تقييم">0</span>
+        <span class="stat-card__label">تقييم</span>
+      </div>
+      <div class="stat-card reveal">
+        <i class="fas fa-city stat-card__icon" aria-hidden="true"></i>
+        <span class="stat-card__num" data-target="12" aria-label="12 منطقة">0</span>
+        <span class="stat-card__label">منطقة</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section" id="contact" aria-label="تواصل معنا">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-header__title">تواصل معنا</h2>
+        <p class="section-header__desc">عندك استفسار أو اقتراح؟ نحن هنا لخدمتك</p>
+      </div>
+      <div class="contact__content">
+        <form class="contact__form" id="contactForm" novalidate>
+          <label for="contactName" class="visually-hidden">الاسم</label>
+          <input type="text" id="contactName" class="contact__input" placeholder="الاسم" required aria-required="true" autocomplete="name">
+          <label for="contactEmail" class="visually-hidden">البريد الإلكتروني</label>
+          <input type="email" id="contactEmail" class="contact__input" placeholder="البريد الإلكتروني" required aria-required="true" autocomplete="email">
+          <label for="contactMsg" class="visually-hidden">رسالتك</label>
+          <textarea id="contactMsg" class="contact__input contact__textarea" rows="4" placeholder="رسالتك..." required aria-required="true"></textarea>
+          <button type="submit" class="contact__btn">إرسال <i class="fas fa-paper-plane" aria-hidden="true"></i></button>
+        </form>
+        <div class="contact__info">
+          <a href="https://wa.me/966500000000" target="_blank" rel="noopener noreferrer" class="whatsapp-btn" aria-label="تواصل عبر واتساب">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            <span>تواصل عبر واتساب</span>
+          </a>
+          <p class="contact__tel"><i class="fas fa-phone" aria-hidden="true"></i> +966 50 000 0000</p>
+          <p class="contact__email"><i class="fas fa-envelope" aria-hidden="true"></i> info@daleelfaisal.com</p>
+          <p class="contact__address"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> الرياض، المملكة العربية السعودية</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p class="footer__copy">© 2026 <strong>دليل فيصل</strong> — كل الحقوق محفوظة</p>
+      <div class="footer__links">
+        <a href="#hero">الرئيسية</a>
+        <a href="#services">الخدمات</a>
+        <a href="#contact">اتصل بنا</a>
+      </div>
+      <div class="footer__socials">
+        <a href="#" class="footer__social" aria-label="تويتر"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+        <a href="#" class="footer__social" aria-label="سناب شات"><i class="fab fa-snapchat" aria-hidden="true"></i></a>
+        <a href="#" class="footer__social" aria-label="انستقرام"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="العودة إلى الأعلى" tabindex="-1" title="العودة إلى الأعلى">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Toast container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+  <script>
+    /* ===== Utilities ===== */
+    function debounce(fn, ms) {
+      let timer;
+      return (...args) => { clearTimeout(timer); timer = setTimeout(() => fn(...args), ms); };
+    }
+
+    const qs = (sel, ctx) => (ctx || document).querySelector(sel);
+    const qsa = (sel, ctx) => (ctx || document).querySelectorAll(sel);
+
+    /* ===== Mobile Menu ===== */
+    (function menu() {
+      const hamburger = document.getElementById('hamburger');
+      const nav = document.getElementById('nav');
+      if (!hamburger || !nav) return;
+
+      hamburger.addEventListener('click', () => {
+        const open = nav.classList.toggle('open');
+        hamburger.classList.toggle('active');
+        hamburger.setAttribute('aria-expanded', open);
+      });
+
+      qsa('[data-nav]').forEach(link => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('open');
+          hamburger.classList.remove('active');
+          hamburger.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && nav.classList.contains('open')) {
+          nav.classList.remove('open');
+          hamburger.classList.remove('active');
+          hamburger.setAttribute('aria-expanded', 'false');
+          hamburger.focus();
+        }
+      });
+    })();
+
+    /* ===== Scroll Spy + Header + Back to Top ===== */
+    (function scrollManager() {
+      const header = document.querySelector('.header');
+      const backToTop = document.getElementById('backToTop');
+      const sections = qsa('.section');
+      const navLinks = qsa('.nav__link');
+      const OFFSET = 200;
+
+      let ticking = false;
+
+      function onScroll() {
+        const y = window.scrollY;
+
+        header.classList.toggle('scrolled', y > 40);
+
+        if (backToTop) {
+          backToTop.classList.toggle('visible', y > 500);
+          backToTop.setAttribute('tabindex', y > 500 ? '0' : '-1');
+        }
+
+        /* scroll spy */
+        let current = '';
+        sections.forEach(section => {
+          const top = section.offsetTop - 150;
+          const bottom = top + section.offsetHeight;
+          if (y >= top && y < bottom) current = section.id;
+        });
+
+        navLinks.forEach(link => {
+          link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+        });
+
+        ticking = false;
+      }
+
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          requestAnimationFrame(onScroll);
+          ticking = true;
+        }
+      }, { passive: true });
+
+      onScroll();
+
+      if (backToTop) {
+        backToTop.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+    })();
+
+    /* ===== Theme Toggle ===== */
+    (function theme() {
+      const btn = document.getElementById('themeToggle');
+      const KEY = 'theme';
+
+      function getStored() {
+        try { return localStorage.getItem(KEY); } catch { return null; }
+      }
+
+      function setStored(val) {
+        try { localStorage.setItem(KEY, val); } catch { /* noop */ }
+      }
+
+      function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        setStored(theme);
+        if (!btn) return;
+        const isDark = theme === 'dark';
+        btn.innerHTML = isDark
+          ? '<i class="fas fa-sun" aria-hidden="true"></i>'
+          : '<i class="fas fa-moon" aria-hidden="true"></i>';
+        btn.setAttribute('aria-label', isDark ? 'الوضع النهاري' : 'الوضع الليلي');
+        btn.title = isDark ? 'الوضع النهاري' : 'الوضع الليلي';
+      }
+
+      const stored = getStored();
+      if (stored) {
+        setTheme(stored);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        setTheme('dark');
+      }
+
+      if (btn) {
+        btn.addEventListener('click', () => {
+          const next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          setTheme(next);
+        });
+      }
+    })();
+
+    /* ===== Search & Filter ===== */
+    (function search() {
+      const form = document.getElementById('searchForm');
+      const input = document.getElementById('searchInput');
+      const cards = qsa('.service-card');
+      const noResults = document.getElementById('noResults');
+      const noResultsTerm = document.getElementById('noResultsTerm');
+
+      function filter(query) {
+        const term = query.trim().toLowerCase();
+        let visibleCount = 0;
+
+        cards.forEach(card => {
+          const category = (card.dataset.category || '').toLowerCase();
+          const title = (qs('.service-card__title', card) || {}).textContent || '';
+          const match = !term || category.includes(term) || title.toLowerCase().includes(term);
+          card.style.display = match ? '' : 'none';
+          if (match) visibleCount++;
+        });
+
+        if (noResults && noResultsTerm) {
+          const show = term.length > 0 && visibleCount === 0;
+          noResults.classList.toggle('show', show);
+          if (show) noResultsTerm.textContent = term;
+        }
+      }
+
+      const debouncedFilter = debounce(filter, 200);
+
+      if (form) {
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          filter(input.value);
+        });
+      }
+
+      if (input) {
+        input.addEventListener('input', () => debouncedFilter(input.value));
+      }
+
+      /* Hero tags */
+      qsa('.hero__tag').forEach(tag => {
+        function trigger() {
+          const val = tag.dataset.search;
+          if (val && input) {
+            input.value = val;
+            input.focus();
+            filter(val);
+          }
+        }
+
+        tag.addEventListener('click', trigger);
+        tag.addEventListener('keydown', e => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            trigger();
+          }
+        });
+      });
+    })();
+
+    /* ===== Stats Counter ===== */
+    (function counter() {
+      function animate(el) {
+        const target = +el.dataset.target;
+        if (!target) return;
+        const duration = 1500;
+        const start = performance.now();
+
+        function update(now) {
+          const progress = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          el.textContent = Math.floor(eased * target).toLocaleString('ar-SA');
+          if (progress < 1) requestAnimationFrame(update);
+          else el.textContent = target.toLocaleString('ar-SA');
+        }
+
+        requestAnimationFrame(update);
+      }
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animate(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      qsa('.stat-card__num').forEach(el => observer.observe(el));
+    })();
+
+    /* ===== Scroll Reveal ===== */
+    (function reveal() {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      qsa('.reveal').forEach(el => observer.observe(el));
+    })();
+
+    /* ===== Toast System ===== */
+    (function toast() {
+      const container = document.getElementById('toastContainer');
+      if (!container) return;
+
+      window.showToast = function (message, type) {
+        type = type || 'info';
+        const icons = { success: 'fa-check-circle', error: 'fa-exclamation-circle', info: 'fa-info-circle' };
+        const el = document.createElement('div');
+        el.className = `toast toast--${type}`;
+        el.innerHTML = `<i class="fas ${icons[type] || icons.info}" aria-hidden="true"></i><span>${message}</span>`;
+        container.appendChild(el);
+        setTimeout(() => { if (el.parentNode) el.remove(); }, 3200);
+      };
+    })();
+
+    /* ===== Contact Form ===== */
+    (function contactForm() {
+      const form = document.getElementById('contactForm');
+      if (!form) return;
+
+      const name = document.getElementById('contactName');
+      const email = document.getElementById('contactEmail');
+      const msg = document.getElementById('contactMsg');
+      const btn = qs('.contact__btn', form);
+
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+
+        [name, email, msg].forEach(el => { if (el) el.classList.remove('error'); });
+
+        let valid = true;
+
+        if (name && !name.value.trim()) { name.classList.add('error'); valid = false; }
+        if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())) { email.classList.add('error'); valid = false; }
+        if (msg && !msg.value.trim()) { msg.classList.add('error'); valid = false; }
+
+        if (!valid) {
+          if (typeof showToast === 'function') showToast('يرجى تعبئة جميع الحقول بشكل صحيح', 'error');
+          return;
+        }
+
+        btn.disabled = true;
+        btn.innerHTML = 'جارٍ الإرسال <i class="fas fa-spinner fa-spin" aria-hidden="true"></i>';
+
+        setTimeout(() => {
+          btn.innerHTML = 'تم الإرسال <i class="fas fa-check" aria-hidden="true"></i>';
+          btn.style.background = 'var(--success)';
+
+          if (typeof showToast === 'function') showToast('تم إرسال رسالتك بنجاح! سنتواصل معك قريباً', 'success');
+
+          setTimeout(() => {
+            btn.innerHTML = 'إرسال <i class="fas fa-paper-plane" aria-hidden="true"></i>';
+            btn.style.background = '';
+            btn.disabled = false;
+            form.reset();
+          }, 3000);
+        }, 800);
+      });
+    })();
+  </script>
+</body>
+</html>
